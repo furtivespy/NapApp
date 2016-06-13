@@ -13,7 +13,7 @@ This app is built so I can teach myself a few things.
 
 ## Screenshot
 
-![Screenshot(http://furtivespy.com/img/napappscreenshot.png "Screenshot")]
+![Screenshot](http://furtivespy.com/img/napappscreenshot.png "Screenshot")
 
 ## Installation/Usage
 
