@@ -21,6 +21,8 @@ Run webpack and put on web?
 
 ## Contributing
 
+(This is mainly a personal learning project...)
+
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
@@ -29,7 +31,7 @@ Run webpack and put on web?
 
 ## History
 
-1 weeked of work so far
+1 weekend of work. Got most of the basic stuff out of the way. Still need to hook into foursquare data, and work on multiple views.
 
 ## Credits
 
