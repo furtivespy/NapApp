@@ -1,0 +1,18 @@
+{
+  "naphistory": {
+    "test_first": {
+        "location": "Awesome Park Bench",
+        "date": "Wed, 08 Jul 2015 18:14:27 GMT",
+        "author": "Fleas Witherspoon",
+        "profilePic": "http://lorempixel.com/100/100/cats/",
+        "details": "Some kind of details message"
+    },
+    "test_second": {
+        "location": "Quiet Coffee Shop",
+        "date": "Wed, 08 Jul 2015 18:14:32 GMT",
+        "author": "Hunter S. Thomcat",
+        "profilePic": "http://lorempixel.com/100/100/cats/",
+        "details": "Another message!"
+    }
+  }
+}
