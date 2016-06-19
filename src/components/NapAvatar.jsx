@@ -1,25 +1,15 @@
 import React from 'react';
 import {Avatar, IconMenu, MenuItem, IconButton} from 'material-ui';
 
-class NapAvatar extends React.Component {
-	constructor(props){
-		super(props);
-	}
-
-	render(){
-		var avt = <Avatar />
-		if (this.props.user){
-			avt = <IconMenu	
-					iconButtonElement={<Avatar src={this.props.user.photoURL} />}
-					anchorOrigin={{horizontal: 'right', vertical: 'top'}}
-	      			targetOrigin={{horizontal: 'right', vertical: 'top'}}
-      			>
-      				<MenuItem primaryText="Help" />
-      				<MenuItem primaryText="Sign out" />
-      			 </IconMenu>
-		} 
-		return(avt);
-	}
-}
+const NapAvatar = props => (
+		<IconMenu	
+			iconButtonElement={<Avatar src={props.avatarPhoto} />}
+			anchorOrigin={{horizontal: 'right', vertical: 'top'}}
+      		targetOrigin={{horizontal: 'right', vertical: 'top'}} 
+      		open={props.open}>
+  				<MenuItem primaryText="Help" onTouchTap={props.helpClick} />
+  				<MenuItem primaryText="Sign out" onTouchTap={props.logoutClick} />
+  		</IconMenu>
+	)
 
 export default NapAvatar

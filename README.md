@@ -5,11 +5,14 @@ A Swarm-like app to check-in naps around town and find good nap locations
 
 This app is built so I can teach myself a few things. 
 * React
+* Redux
 * Webpack
-* Flux
-* Alt
 * Firebase
 * Material UI
+
+## Beta
+
+[Nap App Test Site](https://nameless-garden-86566.herokuapp.com/)
 
 ## Screenshot
 
@@ -17,7 +20,9 @@ This app is built so I can teach myself a few things.
 
 ## Installation/Usage
 
-Run webpack and put on web?
+From scripts:
+build: "webpack --config ./webpack.prod.config.js --progress --colors",
+start: "node ./src/app.js"
 
 ## Contributing
 
@@ -31,11 +36,12 @@ Run webpack and put on web?
 
 ## History
 
-1 weekend of work. Got most of the basic stuff out of the way. Still need to hook into foursquare data, and work on multiple views.
+* Weekend 1: Got most of the basic stuff out of the way. many of the main components are built. Start to wire up actions and the firebase.auth.
+* Weekend 2: Decided to use Redux. So a bit of refactoring of componets and creations of some containers. Made some basic reducers. Started the process to have a "production" build to push to Heroku.
 
 ## Credits
 
-Thanks to Melissa for the idea and to [hendrikswan/react-stack](https://github.com/hendrikswan/react-stack) for a baseline 
+Thanks to Melissa for the idea and to [hendrikswan/react-stack](https://github.com/hendrikswan/react-stack) for a baseline of react. And to [Dan Abramov](https://github.com/gaearon) for his Redux course on egghead.io and his other articles on the flow of Redux.
 
 ## License
 
