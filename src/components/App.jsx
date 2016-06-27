@@ -17,10 +17,10 @@ import configureStore from '../stores/configureStore'
 
 
 var config = {
-			    apiKey: process.env.FIREBASE_API || "SECRETS!",
-			    authDomain: process.env.FIREBASE_DOMAIN ||"napapp-cfaef.firebaseapp.com",
-			    databaseURL: process.env.FIREBASE_DATABASE ||"https://napapp-cfaef.firebaseio.com",
-			    storageBucket: process.env.FIREBASE_BUCKET ||"napapp-cfaef.appspot.com",
+			    apiKey: "AIzaSyD1WQzyOkvWKkkweP_3sjR6OwUO9R9PIAQ",
+			    authDomain:"napapp-cfaef.firebaseapp.com",
+			    databaseURL: "https://napapp-cfaef.firebaseio.com",
+			    storageBucket: "napapp-cfaef.appspot.com",
 			};
 			
 Firebase.initializeApp(config);
