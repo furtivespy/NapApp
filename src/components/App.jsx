@@ -17,7 +17,7 @@ import configureStore from '../stores/configureStore';
 
 
 var config = {
-			    apiKey: process.env.FIREBASE_API || "SECRETS!",
+			    apiKey: process.env.FIREBASE_API, //|| "SECRETS!",
 			    authDomain: process.env.FIREBASE_DOMAIN ||"napapp-cfaef.firebaseapp.com",
 			    databaseURL: process.env.FIREBASE_DATABASE ||"https://napapp-cfaef.firebaseio.com",
 			    storageBucket: process.env.FIREBASE_BUCKET ||"napapp-cfaef.appspot.com",
