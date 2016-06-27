@@ -1,23 +1,23 @@
-import React from 'react';
-import Firebase from 'firebase';
-import { Provider } from 'react-redux';
+import React from 'react'
+import Firebase from 'firebase'
+import { Provider } from 'react-redux'
 //Components
 import MainViewContainer from '../containers/MainViewContainer'
-import SideMenu from './SideMenu.jsx';
-import {AppBar, Avatar} from 'material-ui';
-import NapAvatarContainer from '../containers/NapAvatarContainer.jsx';
+import SideMenu from './SideMenu.jsx'
+import {AppBar, Avatar} from 'material-ui'
+import NapAvatarContainer from '../containers/NapAvatarContainer.jsx'
 import NapAppBar from './NapAppBar.jsx'
 //Themes
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {deepPurple300, deepPurple500, cyan500} from 'material-ui/styles/colors';
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import {deepPurple300, deepPurple500, cyan500} from 'material-ui/styles/colors'
 //Actions
-import injectTapEventPlugin from 'react-tap-event-plugin';
-import configureStore from '../stores/configureStore';
+import injectTapEventPlugin from 'react-tap-event-plugin'
+import configureStore from '../stores/configureStore'
 
 
 var config = {
-			    apiKey: process.env.FIREBASE_API, //|| "SECRETS!",
+			    apiKey: process.env.FIREBASE_API || "SECRETS!",
 			    authDomain: process.env.FIREBASE_DOMAIN ||"napapp-cfaef.firebaseapp.com",
 			    databaseURL: process.env.FIREBASE_DATABASE ||"https://napapp-cfaef.firebaseio.com",
 			    storageBucket: process.env.FIREBASE_BUCKET ||"napapp-cfaef.appspot.com",
