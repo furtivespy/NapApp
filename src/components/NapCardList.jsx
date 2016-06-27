@@ -8,35 +8,13 @@ import _ from 'lodash';
 class NapCardList extends React.Component {
 	constructor(props){
 		super(props);
-		this.state = {
-			messages: []
-		};
-
-		
-		this.firebaseRef = Firebase.database().ref("naphistory");
-
-		this.firebaseRef.on("value",(dataSnapshot)=> {
-			var messageVal = dataSnapshot.val();
-			var messages = _(messageVal)
-				.keys()
-				.map((messageKey)=> {
-					var cloned = _.clone(messageVal[messageKey]);
-					cloned.key = messageKey
-					return cloned;
-				})
-				.value();
-			this.setState({
-				messages: messages
-			});
-		});
 	}
 
 	render(){
-		var messageNodes = this.state.messages.map((message)=> {
-
+		console.log(this.props.napList);
+		var messageNodes = this.props.napList.map((message)=> {
 			return (<NapCard message={message} />);
 		});
-
 		return (<Card><List>{messageNodes}</List></Card>);
 	}
 }

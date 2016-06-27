@@ -2,7 +2,7 @@ import React, {Component, PropTypes} from 'react'
 import { connect } from 'react-redux'
 import {Avatar} from 'material-ui'
 import NapAvatar from '../components/NapAvatar.jsx'
-import {helpClick, logoutClick } from '../actions'
+import {helpClick, logoutClick, toggleMenu } from '../actions'
 
 class NapAvatarContainer extends Component {
 	render(){
@@ -17,6 +17,7 @@ class NapAvatarContainer extends Component {
 					avatarPhoto={user.photoURL}
 					helpClick={() => this.props.helpClick()}
 					logoutClick={() => this.props.logoutClick()} 
+					avatarMenuClick={() => this.props.toggleMenu('AVATAR_MENU')}
 					open={appbar.showUserMenu} />
 			)
 		}
@@ -26,12 +27,12 @@ class NapAvatarContainer extends Component {
 const mapStateToProps = (state) => {
 	const {user, appbar} = state
 	return {
-		user,
+		user, 
 		appbar
 	}
 }
 
 export default connect(
 	mapStateToProps,
-	{ helpClick, logoutClick}
+	{ helpClick, logoutClick, toggleMenu}
 )(NapAvatarContainer)

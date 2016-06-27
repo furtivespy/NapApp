@@ -5,7 +5,11 @@ import { loginClick } from '../actions'
 
 class LoginContainer extends Component {
 	render(){
-		return(<Login loginClick={() => this.props.loginClick()} />)
+		return(<Login 
+				twitterLogin={() => this.props.loginClick('TWITTER')} 
+				facebookLogin={() => this.props.loginClick('FACEBOOK')} 
+				googleLogin={() => this.props.loginClick('GOOGLE')} 
+			/>)
 	}
 }
 

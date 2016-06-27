@@ -7,7 +7,8 @@ export default function user(state = initialState, action) {
 		case LOGIN_COMPLETE:
 			return action.user
 		case LOGOUT:
-		default:
 			return initialState
+		default:
+			return state
 	}
 }

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config ./webpack.prod.config.js --progress --colors",
+    "devbuild": "webpack --config ./webpack.dev.config.js --progress --colors",
     "start": "node ./src/app.js"
   },
   "author": "Will",
@@ -31,6 +32,7 @@
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
     "babel-preset-stage-0": "^6.5.0",
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",

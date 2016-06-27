@@ -13,8 +13,9 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/public/'
   },
-
-
+  plugins: [
+  	new webpack.HotModuleReplacementPlugin()
+  ],
   module: {
 		loaders: [
 			{
@@ -23,7 +24,7 @@ module.exports = {
 				loader: 'babel',
 				query:
 				{
-					presets:['es2015', 'react', 'stage-0']
+					presets:['es2015', 'react', 'stage-0', 'react-hmre']
 				}
 			},
 			{

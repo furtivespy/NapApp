@@ -38,6 +38,7 @@ start: "node ./src/app.js"
 
 * Weekend 1: Got most of the basic stuff out of the way. many of the main components are built. Start to wire up actions and the firebase.auth.
 * Weekend 2: Decided to use Redux. So a bit of refactoring of componets and creations of some containers. Made some basic reducers. Started the process to have a "production" build to push to Heroku.
+* Weekend 3: Switched all the existing Firebase calls to use the Redux store. Added multiple login services. Added a help and error dialog. Added logout.
 
 ## Credits
 

@@ -4,12 +4,13 @@ import {Avatar, IconMenu, MenuItem, IconButton} from 'material-ui';
 const NapAvatar = props => (
 		<IconMenu	
 			iconButtonElement={<Avatar src={props.avatarPhoto} />}
-			anchorOrigin={{horizontal: 'right', vertical: 'top'}}
+			anchorOrigin={{horizontal: 'right', vertical: 'center'}}
       		targetOrigin={{horizontal: 'right', vertical: 'top'}} 
-      		open={props.open}>
+      		onRequestChange={props.avatarMenuClick}
+      		open={props.open}> 
   				<MenuItem primaryText="Help" onTouchTap={props.helpClick} />
   				<MenuItem primaryText="Sign out" onTouchTap={props.logoutClick} />
-  		</IconMenu>
+  		</IconMenu> 
 	)
 
 export default NapAvatar

@@ -1,16 +1,19 @@
-var path = require('path');
+const path = require('path');
+const webpack = require('webpack')
 
 module.exports = {
-	devtool: 'eval-source-map',
-	entry: {
-		main: [
-			'./src/main.js',
-		]
-	},
-	output: {
-		filename: './public/[name].js'
-	},
-	module: {
+  devtool: 'eval-source-map',
+
+  entry: [
+    './src/main.js'
+  ],
+
+  output: {
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js',
+    publicPath: '/public/'
+  },
+  module: {
 		loaders: [
 			{
 				test: /\.jsx?$/,
@@ -18,7 +21,7 @@ module.exports = {
 				loader: 'babel',
 				query:
 				{
-					presets:['es2015', 'react', 'stage-0']
+					presets:['es2015', 'react', 'stage-0', 'react-hmre']
 				}
 			},
 			{
