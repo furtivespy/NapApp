@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --config ./webpack.prod.config.js --progress --colors",
     "devbuild": "webpack --config ./webpack.dev.config.js --progress --colors",
+    "postinstall": "webpack --config ./webpack.prod.config.js --progress",
     "start": "node ./src/app.js"
   },
   "author": "Will",
