@@ -24,7 +24,11 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('production')
+        'NODE_ENV': JSON.stringify('production'),
+        'FIREBASE_API': JSON.stringify(process.env.FIREBASE_API),
+        'FIREBASE_DOMAIN': JSON.stringify(process.env.FIREBASE_DOMAIN),
+        'FIREBASE_DATABASE': JSON.stringify(process.env.FIREBASE_DATABASE),
+        'FIREBASE_BUCKET': JSON.stringify(process.env.FIREBASE_BUCKET)
       }
     })
   ],
